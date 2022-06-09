@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e0e0e0;
+}
+
+button {
+  font-size: 16px;
+  color: black;
+  height: 200px;
+  width: 200px;
+  border: 1px solid #e0e0e0;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow:  20px 20px 60px #bebebe,
+               -20px -20px 60px #ffffff;
+}
+
+button:active {
+  transform: translate(1px, 1px);
+  box-shadow: none;
+}
+
