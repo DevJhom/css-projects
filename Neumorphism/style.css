@@ -5,26 +5,49 @@
 
 body {
   display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
   background-color: #e0e0e0;
 }
 
-button {
-  font-size: 16px;
-  color: black;
-  height: 200px;
-  width: 200px;
-  border: 1px solid #e0e0e0;
-  border-radius: 50px;
-  background: #e0e0e0;
-  box-shadow:  20px 20px 60px #bebebe,
-               -20px -20px 60px #ffffff;
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 65vw;
+  border-radius: 100px;
+  padding: 70px 60px;
+  box-shadow: inset 15px 15px 30px #bebebe,
+  inset -10px -10px 30px #ffffff;
 }
 
-button:active {
+.outset {
+  height: 180px;
+  width: 180px;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow:  20px 20px 40px #bebebe,
+               -20px -20px 40px #ffffff;
+}
+
+.outset:active {
   transform: translate(1px, 1px);
   box-shadow: none;
 }
 
+.inset {
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  background: #e0e0e0;
+  box-shadow: inset 20px 20px 40px #bebebe,
+  inset -20px -20px 40px #ffffff;
+}
+
+.inset:hover {
+  box-shadow:  20px 20px 40px #bebebe,
+  -20px -20px 40px #ffffff;
+}
