@@ -41,13 +41,17 @@ body{
 }
 
 .card:hover {
-    transform: scale(0.9);
+    transform: scale(0.92);
     transition: transform 0.3s ease-out;
 }
 
-.card:hover .content{
+.card:hover .content {
     transform: translateY(0);
 
+}
+
+.card:hover .content p, .card:hover .content button {
+    visibility: visible;
 }
 
 .card:hover::after {
@@ -72,11 +76,12 @@ body{
 }
 
 .content h2 {
-    color: var(--color)
+    color: var(--color);
 }
 
 .content p {
-    color: var(--color)
+    color: var(--color);
+    visibility: hidden;
 }
 
 .content button {
@@ -87,6 +92,7 @@ body{
     border: 1px solid var(--color);
     border-radius: 7px;
     float: right;
+    visibility: hidden;
 }
 
 .content button:hover {
