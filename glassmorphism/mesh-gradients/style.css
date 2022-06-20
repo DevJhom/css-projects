@@ -1,9 +1,11 @@
-html, body {
+@import url("https://fonts.googleapis.com/css2?family=Helvetica:wght@300&display=swap");
+
+body {
+    font-family: 'Helvetica', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
 }
 
 .container {
@@ -11,7 +13,7 @@ html, body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 65vw;
+    width: 500px;
     /* border: 1px solid red; */
 }
 
@@ -51,4 +53,33 @@ html, body {
     radial-gradient(at 0% 100%, rgba(255, 195, 0, 1), transparent 50%),
     radial-gradient(at 80% 100%, rgba(199, 0, 57, 1), transparent 50%),
     radial-gradient(at 0% 0%, rgba(0, 0, 255, 1), transparent 50%); 
+}
+
+/* Adding gradient to h1 text */
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+    background: linear-gradient(to right, red, blue, green, yellow);
+    background-size: 200% 200%;
+
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+    animation: animate 7s ease infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0% 100%;
+    }
+    50% {
+        background-position: 100% 200%;
+    }
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+p {
+    margin: 0 0 40px 0;
 }
