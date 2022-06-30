@@ -9,7 +9,6 @@ body {
 
 .section1 {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100vw;
@@ -24,26 +23,80 @@ body {
     radial-gradient(at 0% 0%, rgba(0, 0, 255, 1), transparent 50%); 
 }
 
-.section1 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 80vw;
+.section1 .glass-container {
+    width: 85vw;
     height: 80vh;
     border-radius: 15px;
+    padding: 2rem 1rem;
     background: rgba(255, 255, 255, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 } 
 
-.section1 h1 {
+.section1 nav {
+    color: #fff;
+    overflow: hidden;
+}
+
+.section1 nav .left{
+    float: left;
+}
+
+.section1 nav .right {
+    float: right;
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
+}   
+
+.section1 nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.section1 nav a.logo{   
+    font-size: 1.3rem;
+}
+
+.section1 main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    top: 40%;
+    left: 10%;
+    transform: translateY(-40%);
+}
+
+.section1 main h1 {
+    margin: 0;
     color: #fff;
     font-size: 3rem;
     font-weight: 500;
 }
 
-.section1 button {
+.section1 main p {
+    margin: 1.3rem 0;
+    color: #fff;
+    width: 60%;
+}
+
+.section1 main button {
+    font-size: 1rem;
+    height: 2.5rem;
+    width: 8rem;
+    border-radius: 25px;
+    border: none;
+}
+
+.section1 img {
+    position: absolute;
+    right: 10%;
+    height: 300px;
+    width: 500px;
+}
+
+/* .section1 button {
     position: relative;
     font-family: inherit;
     font-size: 1rem;
@@ -77,7 +130,7 @@ body {
 .section1 button:hover::after {
     transform: scaleX(1);
     transform-origin: left;
-}
+} */
 
 /* Section 2 */
 
