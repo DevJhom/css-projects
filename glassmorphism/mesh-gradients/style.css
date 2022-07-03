@@ -13,8 +13,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 500px;
-    /* border: 1px solid red; */
+    width: max(380px, 30vw);
+    padding: 0 10px;
 }
 
 .canvas {
@@ -64,6 +64,7 @@ h1 {
 
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    background-clip: text;
 
     animation: animate 7s ease infinite;
 }
