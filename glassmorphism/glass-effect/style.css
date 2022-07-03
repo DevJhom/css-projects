@@ -76,9 +76,9 @@ body {
 }
 
 .section1 main p {
-    margin: 1.3rem 0;
     color: #fff;
     width: 60%;
+    margin: 1.3rem 0;
 }
 
 .section1 main button {
@@ -87,50 +87,37 @@ body {
     width: 8rem;
     border-radius: 25px;
     border: none;
+    margin: 1rem 0 0 0;
+    cursor: pointer;
+}
+
+.section1 main button:hover {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
 }
 
 .section1 img {
     position: absolute;
     right: 10%;
-    height: 300px;
-    width: 500px;
+    width: max(40vw, 250px);
+    height: max(25vw, 150px);
 }
 
-/* .section1 button {
-    position: relative;
-    font-family: inherit;
-    font-size: 1rem;
-    color: #fff;
-    border-radius: 5px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    background-color: rgba(255, 255, 255, 0.4);
-    padding: 0.7rem 1.5rem;
-    cursor: pointer;
-}
+@media (max-width: 912px) {
+    .section1 main {
+        width: 80%;
+    }
 
-.section1 button::after {
-    content: '';
-    background: #fff;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    border-radius: 5px;
-    z-index: -1;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.2s ease-in;
-}
+    .section1 main p {
+        width: 100%;
+    }
 
-.section1 button:hover {
-    color: black;
-}
-
-.section1 button:hover::after {
-    transform: scaleX(1);
-    transform-origin: left;
-} */
+    .section1 img {
+        bottom: 10%;
+    }
+    
+}  
 
 /* Section 2 */
 
@@ -153,7 +140,6 @@ body {
     width: 40%;
 }
 
-
 .section2 h1 {
     font-size: 2.3rem;
     font-weight: 700;
@@ -173,16 +159,16 @@ body {
     font-size: 1rem;
     color: #fff;
     padding: 0.7rem 1.5rem;
+    margin: 1rem 0;
     border-radius: 25px;
     border: none;
     cursor: pointer;
-    margin: 1rem 0;
 }
 
 .section2 .card {
     position: relative;
-    height: 30vw;
-    width: 20vw;
+    width: max(21vw, 250px);
+    height: max(30vw, 300px);
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -191,7 +177,21 @@ body {
 
 .section2 .card img {
     position: absolute;
-    top: 10%;
-    left: -18px;
-    height: 80%;
+    height: 100%;
 }
+
+@media (max-width: 912px) {
+
+    .section2 {
+        flex-direction: column-reverse;
+    }
+
+    .section2 .content {
+        width: 80%;
+    }
+
+    .section2 p {
+        width: 90%;
+    }
+    
+} 
