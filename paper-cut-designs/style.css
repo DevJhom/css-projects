@@ -16,6 +16,9 @@ body {
   top: 50%;
   left: 20%;
   transform: translate(-50%, -20%);
+  padding: 2rem 1rem;
+  border: 1px solid #fff;
+  /* Create another paper cut thing and use it a backgroudn to wrap this */
 }
 
 .content h1{

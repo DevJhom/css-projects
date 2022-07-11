@@ -38,11 +38,11 @@ body {
     overflow: hidden;
 }
 
-.section1 nav .left{
+.section1 .left{
     float: left;
 }
 
-.section1 nav .right {
+.section1 .right {
     float: right;
     display: flex;
     justify-content: space-around;
@@ -58,6 +58,11 @@ body {
     font-size: 1.3rem;
 }
 
+.left .logo i {
+    font-size: 1.5rem;
+    color: #F47458;
+}
+
 .section1 main {
     position: relative;
     display: flex;
@@ -71,21 +76,24 @@ body {
 .section1 main h1 {
     margin: 0;
     color: #fff;
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: 500;
 }
 
 .section1 main p {
     color: #fff;
-    width: 60%;
+    width: 50%;
     margin: 1.3rem 0;
+    line-height: 1.3rem;
 }
 
 .section1 main button {
+    background-color: #3C8F7C;
+    color: #fff;
     font-size: 1rem;
     height: 2.5rem;
     width: 8rem;
-    border-radius: 25px;
+    border-radius: 7px;
     border: none;
     margin: 1rem 0 0 0;
     cursor: pointer;
@@ -154,7 +162,6 @@ body {
 }
 
 .section2 button {
-    background-image: linear-gradient(to right, #4adede, #1aa7ec);
     font-family: inherit;
     font-size: 1rem;
     color: #fff;
@@ -163,6 +170,7 @@ body {
     border-radius: 25px;
     border: none;
     cursor: pointer;
+    background-image: linear-gradient(to right, #4adede, #1aa7ec);
 }
 
 .section2 .card {
@@ -195,3 +203,89 @@ body {
     }
     
 } 
+
+/* Section 3 */
+
+.section3 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh; 
+    background-color: #252830;
+}
+
+.section3::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-image:     
+    radial-gradient(300px 350px at 5% 60%, rgba(121, 159, 12, 0.1), transparent 75%),
+    radial-gradient(200px 250px at 100% 5%, rgba(121, 159, 12, 0.1), transparent 75%),
+    radial-gradient(150px 150px at 100% 100%, rgba(121, 159, 12, 0.1), transparent 75%);
+}
+
+.section3 .glass {
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+}
+
+.section3 .card {
+    position: relative;
+    width: max(21vw, 250px);
+    height: max(30vw, 300px);
+    border-radius: 15px;
+}
+
+.section3 h1{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    background: linear-gradient(to right, gray, green, yellow);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.section3 .circle {
+    position: absolute;
+    top: 20%;
+    height: 200px;
+    width: 200px;
+    background-image: linear-gradient(green, yellow);
+    border-radius: 50%;
+}
+
+.section3 .circle::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 195px;
+    width: 195px;
+    background-color: #252830;
+    border-radius: 50%;
+}
+
+.section3 .typing {
+    width: 26ch;
+    animation: typing 3s steps(26), blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+}
+
+@keyframes typing {
+    from{
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
