@@ -5,19 +5,18 @@
 
 body {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
   background-color: #e0e0e0;
 }
 
 .container {
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  transform: translateX(-50%);
   width: 65vw;
   border-radius: 100px;
   padding: 70px 60px;
@@ -31,12 +30,12 @@ body {
   border-radius: 50px;
   background: #e0e0e0;
   box-shadow:  20px 20px 40px #bebebe,
-               -20px -20px 40px #ffffff;
+  -20px -20px 40px #ffffff;
 }
 
-.outset:active {
-  transform: translate(1px, 1px);
-  box-shadow: none;
+.outset:hover {
+  box-shadow: inset 20px 20px 40px #bebebe,
+  inset -20px -20px 40px #ffffff;
 }
 
 .inset {
@@ -51,4 +50,78 @@ body {
 .inset:hover {
   box-shadow:  20px 20px 40px #bebebe,
   -20px -20px 40px #ffffff;
+}
+
+/* LOGIN FORM */
+
+.login-page {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 80vw;
+  margin-top: 5rem;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem 2rem;
+  border-radius: 25px;
+  background: #e0e0e0;
+  box-shadow:  15px 15px 30px #bebebe,
+  -15px -15px 30px #ffffff;
+}
+
+.form input {
+  width: 15vw;
+  margin: 0.5rem 0;
+  padding: 1rem 1.2rem;
+  border: none;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: inset 8px 8px 16px #bebebe,
+  inset -8px -8px 16px #ffffff;
+}
+
+.form input::placeholder {
+  color: rgb(169, 164, 164);
+}
+
+.form button {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 1rem;
+  margin: 1rem 0;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.form button.login-btn{
+  width: 100%;
+  background-color: #4b89dc;
+  color: #fff;
+}
+
+.form button.login-btn:active{
+  transform: scale(0.98);
+
+}
+
+.form button.create-account-btn{
+  width: 80%;
+  background: #e0e0e0;
+  box-shadow:  8px 8px 16px #bebebe,
+  -8px -8px 16px #ffffff;
+  font-size: 0.85rem;
+}
+
+.form button.create-account-btn:active{
+  transform: translate(1px, 1px);
+  box-shadow: none;
+}
+
+.login-page h1 {
+  margin-bottom: 1rem;
 }
