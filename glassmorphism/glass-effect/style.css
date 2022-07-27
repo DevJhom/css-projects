@@ -49,19 +49,32 @@ body {
     width: 25%;
 }   
 
+.section1 .hamburger {
+    display: none;
+}
+
 .section1 nav a {
-    text-decoration: none;
     color: #fff;
+    text-decoration: none;
+}
+
+.section1 nav a.active, 
+.section1 nav a:hover {
+    font-weight: bold;
+    text-shadow: 2px 2px 10px #fff;
 }
 
 .section1 nav a.logo{   
     font-size: 1.3rem;
 }
 
-.left .logo i {
+.section1 nav a.logo i {
+    color: #36bc9b;
     font-size: 1.5rem;
-    color: #F47458;
+    margin-right: 5px;
 }
+
+/* main content */
 
 .section1 main {
     position: relative;
@@ -73,56 +86,85 @@ body {
     transform: translateY(-40%);
 }
 
-.section1 main h1 {
-    margin: 0;
+.section1 .title {
     color: #fff;
     font-size: 2.8rem;
     font-weight: 500;
+    margin: 0;
 }
 
-.section1 main p {
+.section1 .paragraph {
     color: #fff;
     width: 50%;
     margin: 1.3rem 0;
-    line-height: 1.3rem;
+    line-height: 1.5rem;
 }
 
-.section1 main button {
-    background-color: #3C8F7C;
+.section1 .btn {
+    background-color: transparent;
     color: #fff;
     font-size: 1rem;
     height: 2.5rem;
     width: 8rem;
-    border-radius: 7px;
-    border: none;
     margin: 1rem 0 0 0;
+    border: 2px solid #36bc9b;
+    border-radius: 7px;
     cursor: pointer;
 }
 
-.section1 main button:hover {
-    background-color: transparent;
+.section1 .btn:hover {
     color: #fff;
-    border: 2px solid #fff;
+    background-color: #36bc9b;
+    border: 2px solid #36bc9b;
+}
+
+.section1 .icons{
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+}
+
+.section1 .icons i{
+    color: #fff;
+    font-size: 1.25rem;
+    margin: 5rem 0 0 5px;
+}
+
+.section1 .icons i:hover{
+    color: #36bc9b;
+    cursor: pointer;
 }
 
 .section1 img {
     position: absolute;
+    top: 35%;
     right: 10%;
     width: max(40vw, 250px);
     height: max(25vw, 150px);
 }
 
 @media (max-width: 912px) {
-    .section1 main {
-        width: 80%;
+    .section1 .right {
+        display: none;
     }
 
-    .section1 main p {
-        width: 100%;
+    .section1 .hamburger {
+        display: flex;
+        float: right;
+        color: #fff;
+        font-size: 1.5rem;
+    }
+
+    .section1 main {
+        width: 90%;
+    }
+
+    .section1 .paragraph {
+        width: 90%;
     }
 
     .section1 img {
-        bottom: 10%;
+        display: none;
     }
     
 }  
