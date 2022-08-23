@@ -21,21 +21,21 @@ body {
 }
 
 button {
+  background-color: #000;
+  color: #fff;
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   padding: 1.2rem 2.4rem;
   margin: 0.65rem 0;
   border-radius: 3px;
   cursor: pointer;
+  border: 0;
 }
 
 /* Button 1 - Slides In Effect */
 
 button.slides-in {
   position: relative;
-  background-color: #000;
-  color: #fff;
-  border: 0;
   z-index: 1;
 }
 
@@ -64,8 +64,6 @@ button.slides-in:hover::after {
 
 button.border-gradient {
   position: relative;
-  color: #fff;
-  border: 0;
   z-index: 1;
 }
 
@@ -98,4 +96,24 @@ button.border-gradient:hover::before {
   width: calc(100% + 10px);
 }
 
-/* Button 3 - Circle Filled */
+/* Button 3 - Flashy */
+
+button.flashes {
+  position: relative;
+  overflow: hidden;
+}
+
+button.flashes::before {
+  content: '';
+  position: absolute;
+  background-color: #fff;
+  left: -10px;
+  width: 10px;
+  top: 0;
+  bottom: 0;
+}
+
+button.flashes:hover::before {
+  left: calc(100% + 10px);
+  transition: left 500ms;
+}
