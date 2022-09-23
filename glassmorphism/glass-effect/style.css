@@ -32,7 +32,6 @@ body {
     height: 80vh;
     padding: 2rem 1rem;
     border-radius: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 } 
@@ -153,13 +152,12 @@ body {
     width: max(40vw, 250px);
     height: max(25vw, 150px);
     padding: 2rem 2rem 1rem 2rem;
-    border-radius: 7px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 .section1 img:hover {
     transform: scale(1.007);
-    box-shadow: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 912px) {
