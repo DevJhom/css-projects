@@ -45,6 +45,8 @@ Image attributions
 <br>
 https://unsplash.com/photos/gEta6dbzFy0
 <br>
+https://www.freepik.com/free-vector/happy-freelancer-with-computer-home-young-man-sitting-armchair-using-laptop-chatting-online-smiling-vector-illustration-distance-work-online-learning-freelance_10172825.htm#query=freelancer&position=4&from_view=keyword
+<br>
 https://www.pinterest.com/pin/120612096258946466/
 <br>
 https://www.figma.com/file/GLVHdPJFS7hjP9u7XYeYWm/SALY---3D-Illustration-Pack-(Community)?node-id=7%3A4
